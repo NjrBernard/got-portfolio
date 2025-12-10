@@ -1,7 +1,6 @@
-{{newCharacter.firstName}} {{newCharacter.lastName}} - {{newCharacter.title}}
-<br>
+
 <div class="characters-wrapper">
-    @for (character of charactersFromApi; track character.id) {
+    @for (character of charactersFromParent; track character.id) {
         <div class="character-card">
             <h1>{{character.firstName}} {{character.lastName}}</h1>
             <p>{{character.title}}</p>
@@ -10,5 +9,8 @@
     }
     @empty {
         <p>Aucun character à afficher</p>
+    }
+    @for (item of tableauTest; track item) {
+        <div>{{item}}</div>
     }
 </div>

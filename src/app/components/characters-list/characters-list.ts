@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Characters } from '../../shared/models/characters.model';
 
 @Component({
@@ -8,33 +8,11 @@ import { Characters } from '../../shared/models/characters.model';
   styleUrl: './characters-list.scss',
 })
 export class CharactersList {
-protected newCharacter: Characters = {
-    id: 1,
-    firstName: 'Nicolas',
-    lastName: 'Bernard',
-    title: 'GOAT',
-    image: '',
-    imageUrl: ''
-}
+  @Input() public  charactersFromParent!: Characters[];
+  @Input() public tableauTest!: number[];
 
-protected charactersFromApi: Characters[] = [
-  {
-    id: 2,
-    firstName: 'Martin',
-    lastName: 'Ferret',
-    family: 'Pieds carrés',
-    title: 'Roi',
-    image: '',
-    imageUrl: ''
-  },
-  {
-    id: 3,
-    firstName: 'Xavier',
-    lastName: 'Estanove',
-    family: 'Linux',
-    title: 'Seigneur',
-    image: '',
-    imageUrl: ''
+  ngOnInit(): void {
+    console.log(this.charactersFromParent);
+    console.log(this.tableauTest);
   }
-];
 }

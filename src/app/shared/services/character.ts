@@ -10,7 +10,7 @@ export class CharacterService {
   private charactersUrl : string = 'https://thronesapi.com/api/v2/Characters';
   private httpClient = inject(HttpClient);
 
-  getCharacters() : Observable<Characters[]> {
+  public getCharacters() : Observable<Characters[]> {
     return this.httpClient.get<Characters[]>(this.charactersUrl);
   }
 }

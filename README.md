@@ -8,3 +8,11 @@
 - Au click, on affiche ses informations
 
 Base URL: [text](https://thronesapi.com/api/v2/Characters)
+
+
+// Exo 
+
+# Exo
+
+1. Depuis le parent (app) - Déclarer une nouvelle variable (avec la valeur que vous voulez).
+2. Transmettez cette valeur via @Input au composant enfant (character-list)
