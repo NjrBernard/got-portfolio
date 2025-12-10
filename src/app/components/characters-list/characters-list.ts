@@ -30,7 +30,7 @@ protected charactersFromApi: Characters[] = [
   {
     id: 3,
     firstName: 'Xavier',
-    lastName: 'Esta',
+    lastName: 'Estanove',
     family: 'Linux',
     title: 'Seigneur',
     image: '',
