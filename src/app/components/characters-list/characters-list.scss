@@ -1,0 +1,54 @@
+img {
+    width:200px;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+}
+
+.character-card {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    height: 450px;
+    width: 450px;
+}
+
+.character-card:hover {
+    transform: translate(9px, 3px);
+    border: solid blue 2px;
+    box-shadow: 5px 5px 5px grey;
+    transition: all 0.4s ease-in-out;
+}
+
+.head-card {
+    margin: 0px;
+    padding: 0px;
+    height: 20%;
+}
+
+.corps {
+    height: 70%;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.foot-card {
+    margin: 0px;
+    padding: 0px;
+    justify-content: bottom;
+    height: 10%;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h3 {
+    font-style: italic;
+}

@@ -1,0 +1,46 @@
+.continent-card-pair {
+    display: inline-block;
+    border: solid 2px blue;
+    border-radius: 10px;
+    margin: 30px;
+    width: 20%;
+    min-width: 400px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.continent-card-impair {
+    display: inline-block;
+    border: solid 2px palevioletred;
+    border-radius: 10px;
+    margin: 30px;
+    width: 20%;
+    min-width: 400px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline
+}
+
+h2 {
+    text-align: center;
+}
+
+.continent-card-pair:hover {
+    background-color: lightskyblue;
+    border: 3px solid blue;
+}
+
+.continent-card-impair:hover {
+    background-color: pink;
+    border: 3px solid palevioletred;
+}

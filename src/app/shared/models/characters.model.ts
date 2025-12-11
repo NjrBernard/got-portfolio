@@ -8,3 +8,4 @@ export interface Characters {
     image: string;
     imageUrl: string;
 }
+

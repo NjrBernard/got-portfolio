@@ -9,10 +9,8 @@ import { Characters } from '../../shared/models/characters.model';
 })
 export class CharactersList {
   @Input() public  charactersFromParent!: Characters[];
-  @Input() public tableauTest!: number[];
 
   ngOnInit(): void {
     console.log(this.charactersFromParent);
-    console.log(this.tableauTest);
   }
 }
