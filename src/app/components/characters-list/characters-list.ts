@@ -1,16 +1,27 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Characters } from '../../shared/models/characters.model';
+import {NgClass} from '@angular/common';
+ 
 
 @Component({
   selector: 'app-characters-list',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './characters-list.html',
   styleUrl: './characters-list.scss',
 })
-export class CharactersList {
+export class CharactersList implements OnInit {
   @Input() public  charactersFromParent!: Characters[];
 
   ngOnInit(): void {
     console.log(this.charactersFromParent);
   }
+
+
+getFamilyName(character: Characters): string {
+  if (!character.family) return '';
+
+  return character.family
+    .toLowerCase()
+    .replace(/\s+/g, '-');
+}
 }

@@ -1,8 +1,10 @@
+<h2>Liste des personnages</h2>
+<div class="charactersLength">{{charactersFromParent.length}} personnages trouvés</div>
 
 <div class="characters-wrapper">
     @for (character of charactersFromParent; track character.id) {
-        <div class="character-card">
-            <div class="head-card"><h2>{{character.firstName}} {{character.lastName}}</h2>
+        <div class="character-card" [ngClass]="getFamilyName(character)">
+            <div class="head-card"><h4>{{character.firstName}} {{character.lastName}}</h4>
             <h3>{{character.title}}</h3>
             </div>
             <div class="corps"><img src="{{character.imageUrl}}" alt="{{character.firstName}} {{character.lastName}}"></div>
@@ -10,7 +12,7 @@
         </div>
     }
     @empty {
-        <p>Aucun character à afficher</p>
+        <h3>Aucun personnage à afficher</h3>
     }
 
 </div>

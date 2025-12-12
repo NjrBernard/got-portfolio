@@ -1,6 +1,6 @@
 .continent-card-pair {
     display: inline-block;
-    border: solid 2px blue;
+    border: solid 4px blue;
     border-radius: 10px;
     margin: 30px;
     width: 20%;
@@ -9,12 +9,13 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    
+    background: linear-gradient(to left, black, #022658, #1633c7);
+    color: white
 }
 
 .continent-card-impair {
     display: inline-block;
-    border: solid 2px palevioletred;
+    border: solid 4px palevioletred;
     border-radius: 10px;
     margin: 30px;
     width: 20%;
@@ -23,24 +24,32 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    
+    background: linear-gradient(to left, black, #022658, #1633c7);
+
 }
 
 h1 {
     text-align: center;
-    text-decoration: underline
+    text-decoration: underline;
+    color: black
 }
 
 h2 {
     text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+    color: whitesmoke;
 }
 
 .continent-card-pair:hover {
-    background-color: lightskyblue;
+    background: lightblue;
     border: 3px solid blue;
 }
 
 .continent-card-impair:hover {
-    background-color: pink;
+    background: pink;
     border: 3px solid palevioletred;
 }

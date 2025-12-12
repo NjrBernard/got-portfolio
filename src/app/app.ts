@@ -21,11 +21,28 @@ export class App implements OnInit {
   protected continentsToGiveToChild!: Continents[];
 
 
+  protected filteredCharacters!: Characters[];
+
   ngOnInit(): void {
+    this.getCharactersInTemplate();
+    this.getContinentsInTemplate();
+  }
+
+  protected onSearch(term: string): void {
+    this.filteredCharacters = this.charactersToGiveToChild.filter((character: Characters) => {
+      const fullName = character.fullName ?? '';
+      console.log(fullName.toLowerCase().includes(term.toLowerCase()));
+      return fullName.toLowerCase().includes(term.toLowerCase());
+    })
+  }
+
+    private getCharactersInTemplate(): void {
     this.charactersService.getCharacters().subscribe((charactersFromApi: Characters[])  => {
       this.charactersToGiveToChild = charactersFromApi;
+      this.filteredCharacters = charactersFromApi;
       this.cdr.detectChanges();
-    })
+    })}
+    private getContinentsInTemplate(): void {
     this.continentService.getAllContinents().subscribe((continentsFromApi: Continents[]) => {
       this.continentsToGiveToChild = continentsFromApi;
       this.cdr.detectChanges();

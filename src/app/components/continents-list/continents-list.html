@@ -1,12 +1,12 @@
 <div>
 
-<h1>Liste des continents</h1>
+<h2>Liste des continents</h2>
     @for (continent of continentsFromParent; track continent.id) {
         <div class="{{ continent.id % 2 === 0 ? 'continent-card-pair' : 'continent-card-impair' }}">
-            <h2><i>#{{(continent.id+1)}}</i> {{continent.name}}</h2>
+            <h3><i>#{{(continent.id+1)}}</i> {{continent.name}}</h3>
         </div>
     }
     @empty {
-        <p>Aucun continent à afficher</p>
+        <h3>Aucun continent à afficher</h3>
     }
 </div>

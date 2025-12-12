@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(to right, black, #022658, #1633c7, #418df7);
+}
+
+input {
+    border: solid 5px lightblue;
+    display: flex;
+    margin: 20px auto;
+    width: 600px;
+    height: 50px;
+    background: linear-gradient(to left, black, #022658, #1633c7);
+    border-radius: 10px;
+    vertical-align: middle;
+    font-size: x-large;
+    text-align: center;
+    color: lightblue;
+}
+
+input:focus, input:hover, input:active, .charactersLength:focus, .charactersLength:hover, .charactersLength:active  {
+    width: 700px;
+    height: 60px;
+    background: linear-gradient(to right, white, #022658, #1633c7);
+    font-size: xx-large;
+}
+
+.charactersLength {
+    display: flex;
+    width: 600px;
+    height: 50px;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, black, #022658, #1633c7);
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    outline: none;
+    color: lightblue;
+    font-size: x-large;
+}
+
+
+h1 {
+    color: lightblue;
+    font-size: xxx-large;
+}
+
+h2,
+h3 {
+    color: lightblue;
+}
