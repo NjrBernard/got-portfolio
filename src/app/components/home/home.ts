@@ -10,7 +10,7 @@ import { NgClass, NgStyle } from '@angular/common';
  
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CharactersList, ContinentsList, NgClass, NgStyle],
+  imports: [CharactersList, ContinentsList, NgClass, NgStyle],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
