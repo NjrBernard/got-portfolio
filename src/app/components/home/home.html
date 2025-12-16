@@ -15,11 +15,11 @@
     Ceci est un texte en rouge car sa couleur est {{ colorCrimson }}
 </div>-->
 
-<button (click)="toggleColor()" [ngStyle]="{'width': isToggled ? '200px' : '100px'}">Bouton</button>
+<!--<button (click)="toggleColor()" [ngStyle]="{'width': isToggled ? '200px' : '100px'}">Bouton</button>
 <div [ngClass]="isToggled ? 'blue' : 'red'" [ngStyle]="{'font-size': isToggled ? '20px' : '14px'}">
     <h1 [style.color]="isToggled ? 'black' : 'blue'">Coucou</h1>
     <p [ngStyle]="{'text-decoration' : isToggled ? 'underline' : 'none'}">On fait plein de tests</p>
-</div>
+</div>-->
 
 <!-- <div class="coucou" [style.color]="isOnline ? 'green' : 'red'">Hello</div>-->
 <app-characters-list [charactersFromParent]="filteredCharacters" />

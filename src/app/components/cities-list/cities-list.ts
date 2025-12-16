@@ -13,6 +13,8 @@ export class CitiesList {
   @Input () citiesFromParent: CitiesModel [] = [];
   @Output () cityCreated = new EventEmitter<CitiesModel>();
 
+  protected displayCityForm: boolean = false;
+
   protected cityForm = new FormGroup ({
     name: new FormControl<string>('', [Validators.required, Validators.minLength(2)]),
     inhabitants: new FormControl<number | null>(null, [Validators.required, Validators.min(1)]),
@@ -38,4 +40,8 @@ export class CitiesList {
   this.cityCreated.emit(newCity);
   this.cityForm.reset();
 }
+
+protected displayAddCityForm(): void {
+this.displayCityForm = !this.displayCityForm;
 }    
+}
