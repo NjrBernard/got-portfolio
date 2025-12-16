@@ -1,5 +1,5 @@
 <h2>Liste des personnages</h2>
-<div class="charactersLength">{{charactersFromParent.length}} personnages trouvés</div>
+<div class="charactersLength">{{charactersFromParent.length ?? 0}} personnages trouvés</div>
 
 <div class="characters-wrapper">
     @for (character of charactersFromParent; track character.id) {

@@ -1,0 +1,101 @@
+.cityForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    display: inline-block;
+    height: 40px;
+    width: 300px;
+    margin: 20px;
+}
+
+input:hover {
+    font-size: x-large;
+}
+
+button {
+    width: 300px;
+    border: solid 5px lightblue;
+    margin: 20px auto;
+    height: 50px;
+    background: linear-gradient(to left, black, #022658, #1633c7);
+    border-radius: 10px;
+    vertical-align: middle;
+    font-size: x-large;
+    text-align: center;
+    color: lightblue;
+    text-align: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.cities-card {
+    align-items: center;
+    border : solid 4px lightblue;
+    border-radius: 20px;
+    height: 250px;
+    width: 300px;
+    color: white;
+    margin: 2rem auto;
+    font-size: large;
+}
+
+.city-title {
+    border: solid 2px lightblue;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin:0 0 10px 0;
+    padding: 1px;
+}
+
+.EUR {
+    background: linear-gradient(to left, #040279, black);
+}
+
+
+.EUR:hover {
+    background: linear-gradient(to left, #120efa, black);
+    color: lightblue;
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 5px 5px 15px black;
+}
+
+.USD {
+    background: linear-gradient(to left, #5a2d00, black);
+}
+
+.USD:hover {
+    background: linear-gradient(to left, #d65b02, black);
+    color: lightblue;
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 5px 5px 15px black;
+}
+
+
+
+table {
+    width: 100%;
+}
+
+.titre {
+    text-align: left;
+    padding: 5px 15px;
+    text-decoration: underline;
+    width: 50%;
+}
+
+.valeur {
+    text-align: right;
+    padding: 5px 15px;
+    font-style: italic;
+}
+

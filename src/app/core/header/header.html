@@ -15,11 +15,11 @@
             </a>
             <a class="got-link" 
             routerLink="/countries" 
-            routerLinkActive="is-active">
+            routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">
                 Countries
             </a>
             <a class="got-link" 
-            routerLink="/continents/cities" routerLinkActive="is-active">
+            routerLink="/countries/cities" routerLinkActive="is-active">
                 Cities
             </a>
         </nav>
